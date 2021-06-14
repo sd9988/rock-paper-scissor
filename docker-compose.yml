@@ -1,0 +1,13 @@
+version: '3'
+services:
+  go:
+    build: backend
+    restart: always
+    ports:
+      - '8080:8080'
+  react:
+    build: frontend
+    restart: always
+    tty: true
+    ports: 
+      - "3000:1234"

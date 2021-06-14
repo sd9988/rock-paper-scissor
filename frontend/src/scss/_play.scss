@@ -1,0 +1,85 @@
+.play{
+
+    width: 100%;
+
+    position: relative;
+    margin-top: 3.125rem;
+
+    display: flex;
+    flex-direction: column;
+
+    .triangle{
+        position: absolute;
+        align-self: center;
+        margin-top: 4.375rem;
+    }
+
+    .items{
+        display: flex;
+        justify-content: center;
+
+        .icon{
+            height: 160px;
+            width: 160px;
+            border: 18px solid;
+            border-radius: 50%;
+            transition: transform .2s;
+
+            &--paper{
+                @include icon($imageP,$paper-gradient);
+                transform: translateX(-1rem) translateY(-3rem);
+                
+                &:hover{
+                transform: translateX(0rem) translateY(0rem) scale(1.1);
+
+                }
+
+            }
+            &--scissors{
+                @include icon($imageS,$scissors-gradient);
+                transform: translateX(-34rem) translateY(6rem);
+
+                &:hover{
+                    transform: translateX(-32rem) translateY(4rem) scale(1.1);
+
+
+                }
+            }
+            &--rock{
+                @include icon($imageR,$rock-gradient);
+                transform: translateX(11rem) translateY(19rem);
+            
+
+                &:hover{
+                    transform: translateX(9rem) translateY(18rem) scale(1.1);
+
+                }
+            
+            }
+
+            &--lizard{
+                @include icon($imageL,$lizard-gradient);
+                transform: translateX(-1rem) translateY(20rem);
+            
+
+                &:hover{
+                    transform: translateX(-3rem) translateY(18rem) scale(1.1);
+
+                }
+            
+            }
+
+            &--spock{
+                @include icon($imageSp,$spock-gradient);
+                transform: translateX(23rem) translateY(5rem);
+            
+
+                &:hover{
+                    transform: translateX(21rem) translateY(6rem) scale(1.1);
+
+                }
+            
+            }
+        }
+    }
+}
