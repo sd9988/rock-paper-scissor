@@ -29,7 +29,18 @@ npm run build-prod
 
 Open the file `dist/index.html` in your browser
 
-## Credits
 
-Made with [createapp.dev](https://createapp.dev/)
+## With Docker 
 
+Run 
+`docker build -t frontend .`
+
+Run 
+
+`docker run -p 3000:1234 frontend` 
+
+Visit 
+
+`localhost:3000` for frontend. 
+
+Backend and Frontend need to be run together. Use `docker-compose` to run project as a whole.
